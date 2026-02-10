@@ -11,7 +11,7 @@ class ProfileCardScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: AppColors.background,
+      color: Colors.background,
       child: Center(
         child: Container(
           width: 500,
@@ -78,7 +78,7 @@ class ProfileCardScreen extends StatelessWidget {
                   const Icon(
                     Icons.location_on,
                     size: 16,
-                    color: AppColors.locationColor,
+                    color: Colors.locationColor,
                   ),
                   const SizedBox(width: 4),
                   Text(
