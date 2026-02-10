@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../common/widgets/skill_chip.dart';
+import '../common/widgets/social_icon_button.dart';
 import '../common/styles/colors.dart';
 import '../common/styles/text_styles.dart';
 
@@ -49,7 +50,7 @@ class ProfileCardScreen extends StatelessWidget {
               // Name
               Text(
                 'Kurt Emmanuel Duterte',
-                style: AppTextStyles.nameStyle,
+                style: TextStyles.nameStyle,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 8),
@@ -57,7 +58,7 @@ class ProfileCardScreen extends StatelessWidget {
               // Job Title
               Text(
                 'Full-Stack Developer',
-                style: AppTextStyles.jobTitleStyle,
+                style: TextStyles.jobTitleStyle,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
@@ -65,7 +66,7 @@ class ProfileCardScreen extends StatelessWidget {
               // Description
               Text(
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-                style: AppTextStyles.descriptionStyle,
+                style: TextStyles.descriptionStyle,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 16),
@@ -82,7 +83,7 @@ class ProfileCardScreen extends StatelessWidget {
                   const SizedBox(width: 4),
                   Text(
                     'Manila, Philippines',
-                    style: AppTextStyles.locationStyle,
+                    style: TextStyles.locationStyle,
                   ),
                 ],
               ),
@@ -92,41 +93,13 @@ class ProfileCardScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  IconButton(
-                    icon: const FaIcon(
-                      FontAwesomeIcons.facebook,
-                      color: AppColors.iconColor,
-                      size: 20,
-                    ),
-                    onPressed: () {},
-                  ),
+                  SocialIconButton(icon: FontAwesomeIcons.facebook),
                   const SizedBox(width: 8),
-                  IconButton(
-                    icon: const FaIcon(
-                      FontAwesomeIcons.twitter,
-                      color: AppColors.iconColor,
-                      size: 20,
-                    ),
-                    onPressed: () {},
-                  ),
+                  SocialIconButton(icon: FontAwesomeIcons.twitter),
                   const SizedBox(width: 8),
-                  IconButton(
-                    icon: const FaIcon(
-                      FontAwesomeIcons.instagram,
-                      color: AppColors.iconColor,
-                      size: 20,
-                    ),
-                    onPressed: () {},
-                  ),
+                  SocialIconButton(icon: FontAwesomeIcons.instagram),
                   const SizedBox(width: 8),
-                  IconButton(
-                    icon: const FaIcon(
-                      FontAwesomeIcons.linkedin,
-                      color: AppColors.iconColor,
-                      size: 20,
-                    ),
-                    onPressed: () {},
-                  ),
+                  SocialIconButton(icon: FontAwesomeIcons.linkedin),
                 ],
               ),
               const SizedBox(height: 20),
