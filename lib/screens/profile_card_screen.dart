@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../common/widgets/skill_chip.dart';
-import '../common/styles/app_colors.dart';
-import '../common/styles/app_text_styles.dart';
+import '../common/styles/colors.dart';
+import '../common/styles/text_styles.dart';
 
 class ProfileCardScreen extends StatelessWidget {
   const ProfileCardScreen({super.key});
@@ -92,8 +93,8 @@ class ProfileCardScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
-                    icon: const Icon(
-                      Icons.code,
+                    icon: const FaIcon(
+                      FontAwesomeIcons.facebook,
                       color: AppColors.iconColor,
                       size: 20,
                     ),
@@ -101,8 +102,8 @@ class ProfileCardScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 8),
                   IconButton(
-                    icon: const Icon(
-                      Icons.tag,
+                    icon: const FaIcon(
+                      FontAwesomeIcons.twitter,
                       color: AppColors.iconColor,
                       size: 20,
                     ),
@@ -110,8 +111,8 @@ class ProfileCardScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 8),
                   IconButton(
-                    icon: const Icon(
-                      Icons.work,
+                    icon: const FaIcon(
+                      FontAwesomeIcons.instagram,
                       color: AppColors.iconColor,
                       size: 20,
                     ),
@@ -119,8 +120,8 @@ class ProfileCardScreen extends StatelessWidget {
                   ),
                   const SizedBox(width: 8),
                   IconButton(
-                    icon: const Icon(
-                      Icons.email,
+                    icon: const FaIcon(
+                      FontAwesomeIcons.linkedin,
                       color: AppColors.iconColor,
                       size: 20,
                     ),
@@ -130,7 +131,7 @@ class ProfileCardScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // Skills Tags
+              // Skills
               const Wrap(
                 spacing: 12,
                 runSpacing: 8,
